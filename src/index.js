@@ -20,6 +20,10 @@
  * Make sure the first answer is the correct one. Set at least 4 answers, any extras will be shuffled in.
  */
 var questions = [
+/*
+The following questions were derived from information on The George Washington University's Wikipedia page by a former 
+student at The George Washington University.
+*/
     {
         "What is GWU's motto?": [
             "Deus Nobis Fiducia",
@@ -99,7 +103,7 @@ var questions = [
         ]
     },
     {
-        "Who was the first sitting President of the United States to attend a GWU commencement?": [
+        "Who was the first sitting U.S. President to attend a GWU commencement?": [
             "James Monroe",
             "Jimmy Carter",
             "Ulysses S. Grant",
@@ -248,11 +252,11 @@ function onSessionEnded(sessionEndedRequest, session) {
 
 var ANSWER_COUNT = 4;
 var GAME_LENGTH = 5;
-var CARD_TITLE = "Reindeer Games"; // Be sure to change this for your skill.
+var CARD_TITLE = "George Washington University Trivia"; // Be sure to change this for your skill.
 
 function getWelcomeResponse(callback) {
     var sessionAttributes = {},
-        speechOutput = "Reindeer Games. I will ask you " + GAME_LENGTH.toString()
+        speechOutput = "George Washington University Trivia. I will ask you " + GAME_LENGTH.toString()
             + " questions, try to get as many right as you can. Just say the number of the answer. Let's begin. ",
         shouldEndSession = false,
 
